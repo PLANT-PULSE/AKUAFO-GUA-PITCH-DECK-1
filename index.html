@@ -1,57 +1,228 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Akuafo Gua — The Digital Farmers' Market</title><link rel="stylesheet" href="style.css"></head><body>
-<header class="bar"><b>AKUAFO GUA</b><span id="ctr">01 / 22</span><nav><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button><button id="ov">Overview</button><button id="fs">Fullscreen</button></nav></header>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Akuafo Gua — The Digital Farmers' Market</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <span class="brand"><i class="mark" aria-hidden="true"></i> AKUAFO GUA</span>
+  <span id="ctr">01 / 22</span>
+  <nav>
+    <button id="prev" aria-label="Previous">←</button>
+    <button id="next" aria-label="Next">→</button>
+    <button id="ov">Overview</button>
+    <button id="fs">Fullscreen</button>
+  </nav>
+</header>
 <div class="prog"><i id="pb"></i></div>
 <main class="deck">
 
-<section class="slide dark cover" data-t="Cover"><div class="ph hero">[HERO FARM IMAGE]</div><h1>AKUAFO GUA</h1><h3>The Digital Farmers' Market</h3><p class="big">From Farm to Market. From Waste to Value.</p><p class="muted">A digital agricultural and circular-economy marketplace · Ghana</p></section>
+<section class="slide photo-bg cover active" data-t="Cover" style="--shot:url('images/cover-onions.jpg'),url('https://images.pexels.com/photos/29116179/pexels-photo-29116179.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+  <div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
+  <p class="kicker">Ghana · Agriculture · Circular economy</p>
+  <h1>AKUAFO GUA</h1>
+  <p class="sub">The Digital Farmers' Market</p>
+  <p class="big gold">From Farm to Market. From Waste to Value.</p>
+  <p class="muted">A digital agricultural and circular-economy marketplace connecting Ghanaian farmers, buyers, collectors and creators.</p>
+</section>
 
-<section class="slide" data-t="The Opportunity"><h2>What if every farmer could reach more buyers?</h2><h2>What if waste could become another source of income?</h2><h2>What if one ecosystem could answer both?</h2><p class="big gold">Farmers → Buyers → Delivery → Waste Recovery → Recycling → Upcycling → New Products → Buyers</p></section>
+<section class="slide" data-t="The Opportunity">
+  <p class="kicker">The opportunity</p>
+  <div class="split">
+    <div>
+      <h2>What if every farmer could reach more buyers?</h2>
+      <p class="big">What if waste could become another source of income? What if one ecosystem could answer both?</p>
+      <p class="big gold">Farmers → Buyers → Delivery → Waste Recovery → Recycling → Upcycling → New Products → Buyers</p>
+    </div>
+    <div class="mosaic">
+      <div class="tile" style="background-image:url('images/market-peppers.jpg'),url('https://images.pexels.com/photos/36537041/pexels-photo-36537041.jpeg?auto=compress&cs=tinysrgb&w=1200')"><span>Accra market — peppers to buyers</span></div>
+      <div class="tile" style="background-image:url('images/cassava-load.jpg'),url('https://images.pexels.com/photos/35109272/pexels-photo-35109272.jpeg?auto=compress&cs=tinysrgb&w=900')"><span>Cassava leaving the farm</span></div>
+      <div class="tile" style="background-image:url('images/plastic-bottles.jpg'),url('https://images.unsplash.com/photo-1715065590103-0eb717ace022?auto=format&fit=crop&w=900&q=80')"><span>Recovered bottles as raw material</span></div>
+    </div>
+  </div>
+</section>
 
-<section class="slide" data-t="The Problem"><h2>Farmers struggle to find reliable buyers</h2><div class="grid g4" data-c="Unsold produce|Perishable food spoils before it reaches a buyer.;Lost income|Farmers lose money they could have earned.;Unreliable supply|Hotels, restaurants and schools need consistent supplies.;Raw material gaps|Processors such as Kalypo (fruit juice) and Kivo (powdered pepper) need produce at scale."></div><div class="chips" data-chips="Hotels,Restaurants,Chop bars,Supermarkets,Schools,Companies,Institutions,Consumers,Export businesses"></div></section>
+<section class="slide" data-t="The Problem">
+  <p class="kicker">The problem</p>
+  <h2>Farmers struggle to find reliable buyers</h2>
+  <div class="grid g4" data-c="Unsold produce|Perishable food spoils before it reaches a buyer.|images/tomatoes.jpg|https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=800&q=80;Lost income|Farmers lose money they could have earned.|images/farmer-woman.jpg|https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80;Unreliable supply|Hotels, restaurants and schools need consistent supplies.|images/restaurant.jpg|https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80;Raw material gaps|Processors such as Kalypo (fruit juice) and Kivo (powdered pepper) need produce at scale.|images/juice.jpg|https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=80"></div>
+  <div class="chips" data-chips="Hotels,Restaurants,Chop bars,Supermarkets,Schools,Companies,Institutions,Consumers,Export businesses"></div>
+</section>
 
-<section class="slide" data-t="The Waste Problem"><h2>Waste is the second problem, and an untapped resource</h2><div class="grid g3" data-c="Waste generated|Plastic, bottles, farm waste and other recoverable materials.;Recycling|Waste seller → Akuafo Gua → Recycler → recovered material → buckets, bottles, new products.;Upcycling|Creators turn recovered materials into clothing, jewellery, furniture, bags, crafts and compost. Waste → Creativity → Product → Income."></div></section>
+<section class="slide" data-t="The Waste Problem">
+  <p class="kicker">The second problem</p>
+  <h2>Waste is an untapped resource</h2>
+  <div class="grid g3" data-c="Waste generated|Plastic, bottles, farm waste and other recoverable materials.|images/plastic-bottles.jpg|https://images.unsplash.com/photo-1715065590103-0eb717ace022?auto=format&fit=crop&w=900&q=80;Recycling|Waste seller → Akuafo Gua → Recycler → recovered material → buckets, bottles, new products.|images/recycling.jpg|https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=900&q=80;Upcycling|Creators turn recovered materials into clothing, jewellery, furniture, bags, crafts and compost.|images/crafts.jpg|https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=80"></div>
+</section>
 
-<section class="slide dark" data-t="Our Solution"><h2>One platform connecting Ghana's farms, markets and circular economy.</h2><p class="big">Akuafo Gua is a digital marketplace that connects Ghanaian farmers and businesses directly with customers while transforming waste and recovered materials into new economic opportunities through recycling and upcycling.</p><p class="muted">We connect supply to demand, reduce agricultural waste, create new markets for recovered materials, and help turn local resources into sustainable income.</p></section>
+<section class="slide photo-bg" data-t="Our Solution" style="--shot:url('images/harvest.jpg'),url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=1800&q=80')">
+  <p class="kicker">Our solution</p>
+  <h2>One platform connecting Ghana's farms, markets and circular economy.</h2>
+  <p class="big">Akuafo Gua is a digital marketplace that connects Ghanaian farmers and businesses directly with customers while transforming waste and recovered materials into new economic opportunities through recycling and upcycling.</p>
+  <p class="muted">We connect supply to demand, reduce agricultural waste, create new markets for recovered materials, and help turn local resources into sustainable income.</p>
+</section>
 
-<section class="slide" data-t="How It Works"><h2>How Akuafo Gua works</h2>
-<div class="row"><b>Farm produce</b><div class="flow" data-flow="Farmer lists produce>Akuafo Gua>Customer / Business>Delivery rider>Buyer receives"></div></div>
-<div class="row"><b>Waste</b><div class="flow" data-flow="Individual / Organization lists waste>Akuafo Gua>Waste collector>Processor / Recycler"></div></div>
-<div class="row"><b>Upcycling</b><div class="flow" data-flow="Recovered materials>Upcycler>New product>Akuafo Gua>Customer"></div></div></section>
+<section class="slide" data-t="How It Works">
+  <p class="kicker">How it works</p>
+  <h2>Three loops. One marketplace.</h2>
+  <div class="row"><b>Farm produce</b><div class="flow" data-flow="Farmer lists produce>Akuafo Gua>Customer / Business>Delivery rider>Buyer receives"></div></div>
+  <div class="row"><b>Waste</b><div class="flow" data-flow="Individual / Organization lists waste>Akuafo Gua>Waste collector>Processor / Recycler"></div></div>
+  <div class="row"><b>Upcycling</b><div class="flow" data-flow="Recovered materials>Upcycler>New product>Akuafo Gua>Customer"></div></div>
+  <div class="grid g3" style="margin-top:.4rem">
+    <div class="side-shot" style="min-height:18vh;background-image:url('images/phone.jpg'),url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=900&q=80')"><p class="caption">Farmers list harvests from a phone</p></div>
+    <div class="side-shot" style="min-height:18vh;background-image:url('images/delivery-moto.jpg'),url('https://images.pexels.com/photos/31332062/pexels-photo-31332062.jpeg?auto=compress&cs=tinysrgb&w=900')"><p class="caption">Riders move produce to the buyer</p></div>
+    <div class="side-shot" style="min-height:18vh;background-image:url('images/waste-sort.jpg'),url('https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?auto=format&fit=crop&w=900&q=80')"><p class="caption">Collectors sort recoverable waste</p></div>
+  </div>
+</section>
 
-<section class="slide" data-t="The Ecosystem"><h2>The Akuafo Gua ecosystem</h2><div id="eco" data-chips="Farmers,Consumers,Food processors,Hotels,Restaurants,Schools,Companies,Waste generators,Waste collectors,Recyclers,Upcyclers,Delivery riders"><div class="core">AKUAFO<br>GUA</div></div></section>
+<section class="slide" data-t="The Ecosystem">
+  <p class="kicker">The ecosystem</p>
+  <h2>Everyone meets in the middle</h2>
+  <div id="eco" data-chips="Farmers,Consumers,Food processors,Hotels,Restaurants,Schools,Companies,Waste generators,Waste collectors,Recyclers,Upcyclers,Delivery riders"><div class="core">AKUAFO<br>GUA</div></div>
+</section>
 
-<section class="slide" data-t="Partnership Models"><h2>Two ways to partner, or both</h2><div class="grid g3" data-c="Digital marketplace|List produce on the existing marketplace: receive orders, use the shop and cart, get paid through Paystack, get support. No automatic extra charges.;Direct purchasing|Akuafo Gua buys agreed quantities of produce, waste materials or upcycled products and sells them to customers and organizations.;Both|Buy some quantities directly, list the rest on the marketplace. Direct deals and marketplace orders keep separate financial records."></div><p class="muted">Roles: customer / waste generator · farmer · waste collector · delivery rider · processor / buyer · upcycling seller</p></section>
+<section class="slide" data-t="Partnership Models">
+  <p class="kicker">Partnership</p>
+  <h2>Two ways to partner, or both</h2>
+  <div class="grid g3" data-c="Digital marketplace|List produce on the existing marketplace: receive orders, use the shop and cart, get paid through Paystack, get support. No automatic extra charges.|images/payment.jpg|https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80;Direct purchasing|Akuafo Gua buys agreed quantities of produce, waste materials or upcycled products and sells them to customers and organizations.|images/wiki-takoradi.jpg|https://images.pexels.com/photos/36392318/pexels-photo-36392318.jpeg?auto=compress&cs=tinysrgb&w=900;Both|Buy some quantities directly, list the rest on the marketplace. Direct deals and marketplace orders keep separate financial records.|images/produce-spread.jpg|https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=900&q=80"></div>
+  <p class="muted">Roles: customer / waste generator · farmer · waste collector · delivery rider · processor / buyer · upcycling seller</p>
+</section>
 
-<section class="slide" data-t="Target Market"><h2>Who we serve</h2><div class="grid g4" data-c="Individual consumers|Fresh produce, agricultural, recycled and upcycled products.;Businesses|Food processors, restaurants, hotels, chop bars, supermarkets, companies.;Institutions|Schools, hospitals and organizations needing agricultural supplies.;Circular-economy businesses|Recyclers, waste processors, upcyclers, collection businesses."></div><div class="chips" data-chips="Vegetables,Fruits,Tubers,Grains,Legumes,Plantain,Cassava,Yam,Cocoyam,Maize,Rice,Tomatoes,Pepper,Onions,+ more"></div></section>
+<section class="slide" data-t="Target Market">
+  <p class="kicker">Who we serve</p>
+  <h2>Buyers across Ghana's food system</h2>
+  <div class="grid g4" data-c="Individual consumers|Fresh produce, agricultural, recycled and upcycled products.|images/market-accra.jpg|https://images.pexels.com/photos/36392318/pexels-photo-36392318.jpeg?auto=compress&cs=tinysrgb&w=900;Businesses|Food processors, restaurants, hotels, chop bars, supermarkets, companies.|images/hotel.jpg|https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80;Institutions|Schools, hospitals and organizations needing agricultural supplies.|images/school.jpg|https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=80;Circular-economy businesses|Recyclers, waste processors, upcyclers, collection businesses.|images/bags.jpg|https://images.unsplash.com/photo-1590874103328-eac38a941954?auto=format&fit=crop&w=900&q=80"></div>
+  <div class="chips" id="produce">
+    <span class="chip pic-chip" style="background-image:url('images/leafy.jpg'),url('https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=400&q=80')"><span>Vegetables</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/fruits.jpg'),url('https://images.unsplash.com/photo-1619566636858-adf3ef46400b?auto=format&fit=crop&w=400&q=80')"><span>Fruits</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/cassava-load.jpg'),url('https://images.pexels.com/photos/35109272/pexels-photo-35109272.jpeg?auto=compress&cs=tinysrgb&w=400')"><span>Cassava</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/yams.jpg'),url('https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=400&q=80')"><span>Yam & tubers</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/plantain.jpg'),url('https://images.unsplash.com/photo-1603833665858-e61d17a86224?auto=format&fit=crop&w=400&q=80')"><span>Plantain</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/maize.jpg'),url('https://images.unsplash.com/photo-1551754655-cd27e38d2076?auto=format&fit=crop&w=400&q=80')"><span>Maize</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/rice.jpg'),url('https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=400&q=80')"><span>Rice</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/tomatoes.jpg'),url('https://images.unsplash.com/photo-1592924357228-91a4daadcfea?auto=format&fit=crop&w=400&q=80')"><span>Tomatoes</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/chili.jpg'),url('https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?auto=format&fit=crop&w=400&q=80')"><span>Pepper</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/onions-close.jpg'),url('https://images.unsplash.com/photo-1518977956812-cd3d11e2fd4f?auto=format&fit=crop&w=400&q=80')"><span>Onions</span></span>
+    <span class="chip pic-chip" style="background-image:url('images/cover-onions.jpg'),url('https://images.pexels.com/photos/29116179/pexels-photo-29116179.jpeg?auto=compress&cs=tinysrgb&w=400')"><span>+ more Ghana crops</span></span>
+  </div>
+</section>
 
-<section class="slide" data-t="Why Akuafo Gua"><h2>Why Akuafo Gua?</h2><div class="grid g3" data-c="Agriculture + circular economy|Produce, waste recovery, recycling and upcycling in one ecosystem.;Direct market access|Shortens the distance between farmer and buyer.;B2C + B2B + institutional|Individuals, businesses, institutions, processors, farmers.;Multiple partnership models|List, sell directly, buy directly, or combine.;Logistics built in|Produce riders, waste collectors, delivery coordination.;Local problem, local solution|Designed around Ghanaian agriculture, logistics and waste realities."></div></section>
+<section class="slide" data-t="Why Akuafo Gua">
+  <p class="kicker">Why us</p>
+  <h2>Why Akuafo Gua?</h2>
+  <div class="grid g3" data-c="Agriculture + circular economy|Produce, waste recovery, recycling and upcycling in one ecosystem.|images/compost.jpg|https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=800&q=80;Direct market access|Shortens the distance between farmer and buyer.|images/vendor-goods.jpg|https://images.pexels.com/photos/36484218/pexels-photo-36484218.jpeg?auto=compress&cs=tinysrgb&w=800;B2C + B2B + institutional|Individuals, businesses, institutions, processors, farmers.|images/kitchen.jpg|https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80;Multiple partnership models|List, sell directly, buy directly, or combine.|images/payment.jpg|https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80;Logistics built in|Produce riders, waste collectors, delivery coordination.|images/delivery-moto.jpg|https://images.pexels.com/photos/31332062/pexels-photo-31332062.jpeg?auto=compress&cs=tinysrgb&w=800;Local problem, local solution|Designed around Ghanaian agriculture, logistics and waste realities.|images/wiki-farm.jpg|https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80"></div>
+</section>
 
-<section class="slide" data-t="Technology"><h2>Technology already in place</h2><div class="chips big-chips" data-chips="Web marketplace,Farmer dashboard,Buyer experience,Shopping cart,Paystack payments,Produce rider system,Waste collection system,Waste marketplace,Upcycling marketplace,Processor accounts,Admin management,Identity verification,SMS via Arkesel,Order tracking,Product management"></div><p class="muted">Payments: Customer → Payment (Paystack) → Marketplace → Seller / transaction processing. SMS: order, delivery, seller, rider, collection and account notifications.</p></section>
+<section class="slide" data-t="Technology">
+  <p class="kicker">Already built</p>
+  <div class="split">
+    <div>
+      <h2>Technology already in place</h2>
+      <div class="chips big-chips" data-chips="Web marketplace,Farmer dashboard,Buyer experience,Shopping cart,Paystack payments,Produce rider system,Waste collection system,Waste marketplace,Upcycling marketplace,Processor accounts,Admin management,Identity verification,SMS via Arkesel,Order tracking,Product management"></div>
+      <p class="muted">Payments: Customer → Paystack → Marketplace → Seller. SMS: order, delivery, seller, rider, collection and account notifications.</p>
+    </div>
+    <div class="side-shot" style="background-image:url('images/app-home.png'),url('images/phone.jpg'),url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1000&q=80')"><p class="caption">Live web marketplace on Railway</p></div>
+  </div>
+</section>
 
-<section class="slide dark" data-t="Current Product"><h2>We have built it. A working marketplace already exists.</h2><div class="browser"><div class="dots"><i></i><i></i><i></i><span>ekuafo-gua-app-production.up.railway.app/home.php</span></div><div class="shots"><div class="ph">[HOMEPAGE]</div><div class="ph">[FARM MARKETPLACE]</div><div class="ph">[FARMER DASHBOARD]</div><div class="ph">[WASTE MARKETPLACE]</div><div class="ph">[UPCYCLING MARKETPLACE]</div><div class="ph">[REGISTRATION PAGE]</div></div></div></section>
+<section class="slide dark" data-t="Current Product">
+  <p class="kicker">The product</p>
+  <h2>We have built it. A working marketplace already exists.</h2>
+  <div class="browser">
+    <div class="dots"><i></i><i></i><i></i><span>ekuafo-gua-app-production.up.railway.app</span></div>
+    <div class="shots">
+      <figure><img src="images/app-home.png" alt="Akuafo Gua homepage" onerror="this.src='https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80'"><figcaption>Homepage</figcaption></figure>
+      <figure><img src="images/app-shop.png" alt="Farm marketplace shop" onerror="this.src='https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80'"><figcaption>Farm marketplace</figcaption></figure>
+      <figure><img src="images/app-join.png" alt="Join and farmer registration" onerror="this.src='https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=800&q=80'"><figcaption>Registration / join</figcaption></figure>
+      <figure><img src="images/app-waste.png" alt="Waste management marketplace" onerror="this.src='https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80'"><figcaption>Waste marketplace</figcaption></figure>
+      <figure><img src="images/app-upcycled.png" alt="Upcycled marketplace" onerror="this.src='https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=800&q=80'"><figcaption>Upcycling marketplace</figcaption></figure>
+      <figure><img src="images/phone.jpg" alt="Mobile ordering" onerror="this.src='https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80'"><figcaption>Buyer experience</figcaption></figure>
+    </div>
+  </div>
+</section>
 
-<section class="slide" data-t="Traction"><h2>Current traction</h2><div class="grid g4" data-s="farmers:Farmers / Sellers;users:Registered users;products:Products listed;orders:Orders / transactions;value:Transaction value;prospects:Business / institutional prospects;riders:Riders / collectors;partners:Pilot / partner organizations"></div><p class="note">Replace these placeholders with verified figures before presenting.</p></section>
+<section class="slide" data-t="Traction">
+  <p class="kicker">Traction</p>
+  <h2>Current traction</h2>
+  <div class="grid g4" data-s="farmers:Farmers / Sellers|images/farmer-woman.jpg;users:Registered users|images/phone.jpg;products:Products listed|images/produce-spread.jpg;orders:Orders / transactions|images/payment.jpg;value:Transaction value|images/tomatoes.jpg;prospects:Business / institutional prospects|images/hotel.jpg;riders:Riders / collectors|images/delivery-moto.jpg;partners:Pilot / partner organizations|images/school.jpg"></div>
+  <p class="note">Replace these placeholders with verified figures before presenting.</p>
+</section>
 
-<section class="slide" data-t="Business Model"><h2>Multiple revenue streams</h2><div class="grid g3" data-c="Marketplace margin|Commission on marketplace transactions.;Direct purchasing margin|Buy at an agreed price, sell at a sustainable margin.;Delivery / logistics|Produce delivery and logistics coordination.;Waste marketplace|Transaction and service revenue from collection and materials.;Upcycling marketplace|Marketplace revenue from upcycled products.;Business partnerships|B2B with processors, hotels, restaurants, schools."></div><p class="note">All streams are a planned / scalable revenue opportunity unless confirmed. [INSERT VERIFIED DATA]</p></section>
+<section class="slide" data-t="Business Model">
+  <p class="kicker">Revenue</p>
+  <h2>Multiple revenue streams</h2>
+  <div class="grid g3" data-c="Marketplace margin|Commission on marketplace transactions.|images/payment.jpg|https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80;Direct purchasing margin|Buy at an agreed price, sell at a sustainable margin.|images/market-peppers.jpg|https://images.pexels.com/photos/36537041/pexels-photo-36537041.jpeg?auto=compress&cs=tinysrgb&w=800;Delivery / logistics|Produce delivery and logistics coordination.|images/delivery-moto.jpg|https://images.pexels.com/photos/31332062/pexels-photo-31332062.jpeg?auto=compress&cs=tinysrgb&w=800;Waste marketplace|Transaction and service revenue from collection and materials.|images/recycling.jpg|https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=800&q=80;Upcycling marketplace|Marketplace revenue from upcycled products.|images/jewelry.jpg|https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80;Business partnerships|B2B with processors, hotels, restaurants, schools.|images/juice.jpg|https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?auto=format&fit=crop&w=800&q=80"></div>
+  <p class="note">All streams are a planned / scalable revenue opportunity unless confirmed. [INSERT VERIFIED DATA]</p>
+</section>
 
-<section class="slide" data-t="Go-to-Market"><h2>Go-to-market: build outward, phase by phase</h2><div class="grid g4" data-c="Phase 1: Central Region|Farmers, local consumers, restaurants, hotels, schools, food businesses, collectors, recyclers.;Phase 2: Greater Accra|Expand marketplace demand and business partnerships.;Phase 3: Nationwide|Connect producers and buyers across Ghana.;Phase 4: Regional|Adapt the model to other African markets."></div><p class="big gold">Build supply. Build demand. Build trust.</p><p class="muted">Funding supports digital, social, TV and billboard advertising, farmer outreach, partnerships and community education.</p></section>
+<section class="slide" data-t="Go-to-Market">
+  <p class="kicker">Go-to-market</p>
+  <h2>Build outward, phase by phase</h2>
+  <div class="grid g4" data-c="Phase 1: Central Region|Farmers, local consumers, restaurants, hotels, schools, food businesses, collectors, recyclers.|images/wiki-farm.jpg|https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80;Phase 2: Greater Accra|Expand marketplace demand and business partnerships.|images/market-accra.jpg|https://images.pexels.com/photos/36392318/pexels-photo-36392318.jpeg?auto=compress&cs=tinysrgb&w=800;Phase 3: Nationwide|Connect producers and buyers across Ghana.|images/farm-field.jpg|https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=800&q=80;Phase 4: Regional|Adapt the model to other African markets.|images/city.jpg|https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?auto=format&fit=crop&w=800&q=80"></div>
+  <p class="big gold">Build supply. Build demand. Build trust.</p>
+  <p class="muted">Funding supports digital, social, TV and billboard advertising, farmer outreach, partnerships and community education.</p>
+</section>
 
-<section class="slide" data-t="Impact"><h2>Social and economic impact</h2><div class="grid g3" data-c="Farmer market access|More opportunities to find buyers.;Less food waste|Move produce to buyers before it becomes unsellable.;Jobs|Riders, collectors, digital sellers, upcyclers, logistics workers.;Stronger local business|Link processors, restaurants, hotels and schools to local producers.;Circular economy|Turn waste into raw materials and products.;New income|Through waste collection, recycling and upcycling."></div></section>
+<section class="slide" data-t="Impact">
+  <p class="kicker">Impact</p>
+  <h2>Social and economic impact</h2>
+  <div class="grid g3" data-c="Farmer market access|More opportunities to find buyers.|images/wiki-tomato-seller.jpg|https://images.pexels.com/photos/36537041/pexels-photo-36537041.jpeg?auto=compress&cs=tinysrgb&w=800;Less food waste|Move produce to buyers before it becomes unsellable.|images/produce-spread.jpg|https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=800&q=80;Jobs|Riders, collectors, digital sellers, upcyclers, logistics workers.|images/delivery-moto.jpg|https://images.pexels.com/photos/31332062/pexels-photo-31332062.jpeg?auto=compress&cs=tinysrgb&w=800;Stronger local business|Link processors, restaurants, hotels and schools to local producers.|images/kitchen.jpg|https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=800&q=80;Circular economy|Turn waste into raw materials and products.|images/furniture.jpg|https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=800&q=80;New income|Through waste collection, recycling and upcycling.|images/crafts.jpg|https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=800&q=80"></div>
+</section>
 
-<section class="slide dark" data-t="Vision & Mission"><h2>Vision</h2><p class="big">To become Ghana's leading digital ecosystem for agricultural commerce and circular economy, connecting farmers, businesses, consumers and recovery enterprises from local production to national markets.</p><p class="gold big">A Ghana where no farmer struggles to find a market and valuable waste is no longer treated as worthless.</p><p class="muted"><b>Mission:</b> Connect Ghanaian farmers and businesses to reliable markets, reduce agricultural and material waste, create income opportunities, and build a digital circular economy where local resources continuously create value.</p></section>
+<section class="slide photo-bg" data-t="Vision & Mission" style="--shot:url('images/farm-field.jpg'),url('https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&w=1800&q=80')">
+  <p class="kicker">Vision</p>
+  <h2>Ghana's leading digital ecosystem for agricultural commerce and circular economy</h2>
+  <p class="quote-card big gold">A Ghana where no farmer struggles to find a market and valuable waste is no longer treated as worthless.</p>
+  <p class="muted"><b>Mission:</b> Connect Ghanaian farmers and businesses to reliable markets, reduce agricultural and material waste, create income opportunities, and build a digital circular economy where local resources continuously create value.</p>
+</section>
 
-<section class="slide" data-t="Funding Request"><h2>Funding required</h2><p class="amount" data-k="funding"></p><div class="grid g3" data-c="Business registration|Formalize Akuafo Gua as a registered business.;Inventory & direct purchasing|Working capital to buy produce, waste materials and upcycled products for resale.;Marketing|Digital, TV, billboards, farmer and customer acquisition.;Technology infrastructure|Domain, hosting (currently Railway), maintenance, development.;Communication|SMS through Arkesel and seller / customer communication.;Upcycling inventory|Buy from upcycling entrepreneurs and connect them with customers."></div><p class="big gold">Capital will not only build technology. It will activate the marketplace.</p></section>
+<section class="slide" data-t="Funding Request">
+  <p class="kicker">The ask</p>
+  <h2>Funding required</h2>
+  <p class="amount" data-k="funding"></p>
+  <div class="grid g3" data-c="Business registration|Formalize Akuafo Gua as a registered business.|images/team.jpg|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80;Inventory & direct purchasing|Working capital to buy produce, waste materials and upcycled products for resale.|images/cassava-load.jpg|https://images.pexels.com/photos/35109272/pexels-photo-35109272.jpeg?auto=compress&cs=tinysrgb&w=800;Marketing|Digital, TV, billboards, farmer and customer acquisition.|images/billboard.jpg|https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?auto=format&fit=crop&w=800&q=80;Technology infrastructure|Domain, hosting (currently Railway), maintenance, development.|images/phone.jpg|https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80;Communication|SMS through Arkesel and seller / customer communication.|images/payment.jpg|https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80;Upcycling inventory|Buy from upcycling entrepreneurs and connect them with customers.|images/jewelry.jpg|https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80"></div>
+  <p class="big gold">Capital will not only build technology. It will activate the marketplace.</p>
+</section>
 
-<section class="slide" data-t="Growth Targets"><h2>12-month growth targets</h2><div class="grid g4" data-s="t_farmers:Farmers onboarded;t_customers:Customers;t_business:Business buyers;t_products:Products listed;t_waste:Waste generators;t_collectors:Collectors;t_upcyclers:Upcycling sellers;t_tx:Transactions"></div><div class="flow" data-flow="Funding>Inventory>More buyers>More transactions>Less waste>More jobs>Platform growth"></div></section>
+<section class="slide" data-t="Growth Targets">
+  <p class="kicker">12 months</p>
+  <h2>12-month growth targets</h2>
+  <div class="grid g4" data-s="t_farmers:Farmers onboarded|images/farmer-woman.jpg;t_customers:Customers|images/market-accra.jpg;t_business:Business buyers|images/restaurant.jpg;t_products:Products listed|images/fruits.jpg;t_waste:Waste generators|images/plastic-bottles.jpg;t_collectors:Collectors|images/waste-sort.jpg;t_upcyclers:Upcycling sellers|images/crafts.jpg;t_tx:Transactions|images/payment.jpg"></div>
+  <div class="flow" data-flow="Funding>Inventory>More buyers>More transactions>Less waste>More jobs>Platform growth"></div>
+</section>
 
-<section class="slide" data-t="Partnership Opportunity"><h2>Let's build the ecosystem together</h2><div class="grid g4" data-c="Farmers & organizations|Supply agricultural products.;Food processors|Buy agricultural raw materials.;Hotels & restaurants|Source fresh local produce.;Schools|Food supplies for feeding programs.;Recycling companies|Buy recoverable waste.;Upcycling businesses|Sell recovered-material products.;Logistics partners|Support delivery and collection.;Government, NGOs, development orgs|Support agriculture, waste reduction and entrepreneurship."></div></section>
+<section class="slide" data-t="Partnership Opportunity">
+  <p class="kicker">Partners</p>
+  <h2>Let's build the ecosystem together</h2>
+  <div class="grid g4" data-c="Farmers & organizations|Supply agricultural products.|images/harvest.jpg|https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=700&q=80;Food processors|Buy agricultural raw materials.|images/chili.jpg|https://images.unsplash.com/photo-1583119022894-919a68a3d0e3?auto=format&fit=crop&w=700&q=80;Hotels & restaurants|Source fresh local produce.|images/restaurant.jpg|https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80;Schools|Food supplies for feeding programs.|images/school.jpg|https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=700&q=80;Recycling companies|Buy recoverable waste.|images/recycling.jpg|https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&w=700&q=80;Upcycling businesses|Sell recovered-material products.|images/furniture.jpg|https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=700&q=80;Logistics partners|Support delivery and collection.|images/delivery-moto.jpg|https://images.pexels.com/photos/31332062/pexels-photo-31332062.jpeg?auto=compress&cs=tinysrgb&w=700;Government, NGOs, development orgs|Support agriculture, waste reduction and entrepreneurship.|images/hospital.jpg|https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80"></div>
+</section>
 
-<section class="slide dark" data-t="Call to Action"><h2>The next harvest should not become the next waste story.</h2><p class="big">Let's connect Ghana's farmers, businesses, consumers and circular economy through one digital marketplace.</p><div class="grid g3" data-c="Partner with us|Businesses, farmer organizations, institutions.;Support our growth|Sponsors, investors, development partners.;Join the marketplace|Farmers, buyers, collectors, processors, riders, upcyclers."></div><p><a href="https://ekuafo-gua-app-production.up.railway.app/home.php" target="_blank" rel="noopener">https://ekuafo-gua-app-production.up.railway.app/home.php</a></p></section>
+<section class="slide photo-bg" data-t="Call to Action" style="--shot:url('images/market-peppers.jpg'),url('https://images.pexels.com/photos/36537041/pexels-photo-36537041.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+  <p class="kicker">Call to action</p>
+  <h2>The next harvest should not become the next waste story.</h2>
+  <p class="big">Let's connect Ghana's farmers, businesses, consumers and circular economy through one digital marketplace.</p>
+  <div class="grid g3" data-c="Partner with us|Businesses, farmer organizations, institutions.|images/team.jpg|https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80;Support our growth|Sponsors, investors, development partners.|images/harvest.jpg|https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&w=800&q=80;Join the marketplace|Farmers, buyers, collectors, processors, riders, upcyclers.|images/vendor-goods.jpg|https://images.pexels.com/photos/36484218/pexels-photo-36484218.jpeg?auto=compress&cs=tinysrgb&w=800"></div>
+  <p><a class="cta" href="https://ekuafo-gua-app-production.up.railway.app/home.php" target="_blank" rel="noopener">Open the live marketplace →</a></p>
+</section>
 
-<section class="slide dark cover" data-t="Closing"><h1>AKUAFO GUA</h1><h3>The Digital Farmers' Market</h3><p class="big">From Farm to Market.<br>From Waste to Value.</p><p><b>Afful Prince</b>, Founder & CEO · <b>Ebenezer Pogu</b>, Co-Founder</p><p>ekuafo-gua-app-production.up.railway.app</p><p class="muted">Email: <span data-k="email"></span> · Phone: <span data-k="phone"></span> · Social: <span data-k="social"></span></p></section>
+<section class="slide photo-bg cover" data-t="Closing" style="--shot:url('images/cover-onions.jpg'),url('https://images.pexels.com/photos/29116179/pexels-photo-29116179.jpeg?auto=compress&cs=tinysrgb&w=1800')">
+  <div class="flag" aria-hidden="true"><i></i><i></i><i></i></div>
+  <h1>AKUAFO GUA</h1>
+  <p class="sub">The Digital Farmers' Market</p>
+  <p class="big gold">From Farm to Market.<br>From Waste to Value.</p>
+  <div class="team">
+    <div class="person"><b>Afful Prince</b><br>Founder & CEO</div>
+    <div class="person"><b>Ebenezer Pogu</b><br>Co-Founder</div>
+  </div>
+  <p>ekuafo-gua-app-production.up.railway.app · Takoradi, Ghana</p>
+  <p class="muted">Email: <span data-k="email"></span> · Phone: <span data-k="phone"></span> · Social: <span data-k="social"></span></p>
+</section>
 
 </main>
 <div id="menu" hidden></div>
-<script src="script.js"></script></body></html>
+<script src="script.js"></script>
+</body>
+</html>
