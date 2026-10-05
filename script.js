@@ -1,0 +1,30 @@
+/* ===== EDITABLE CONTENT: update these figures with verified data ===== */
+const pitchData={
+ farmers:"[XX+]",users:"[XX+]",products:"[XX+]",orders:"[XX+]",value:"GH₵ [XX]",prospects:"[XX+]",riders:"[XX+]",partners:"[XX+]",
+ funding:"GH₵ [INSERT AMOUNT]",
+ t_farmers:"[XX]+",t_customers:"[XX]+",t_business:"[XX]+",t_products:"[XX]+",t_waste:"[XX]+",t_collectors:"[XX]+",t_upcyclers:"[XX]+",t_tx:"[XX]+",
+ email:"[INSERT EMAIL]",phone:"[INSERT PHONE]",social:"[INSERT SOCIAL LINKS]"
+};
+/* ===== END EDITABLE CONTENT ===== */
+const $=(s,r=document)=>[...r.querySelectorAll(s)];
+$('[data-c]').forEach(e=>e.innerHTML=e.dataset.c.split(';').map(x=>{const[a,b]=x.split('|');return `<div class="card"><h3>${a}</h3>${b?`<p>${b}</p>`:''}</div>`}).join(''));
+$('[data-s]').forEach(e=>e.innerHTML=e.dataset.s.split(';').map(x=>{const[k,l]=x.split(':');return `<div class="card stat"><strong data-k="${k}"></strong><p>${l}</p></div>`}).join(''));
+$('[data-flow]').forEach(e=>e.innerHTML=e.dataset.flow.split('>').map(x=>`<span class="node">${x}</span>`).join('<i class="arr">→</i>'));
+$('[data-chips]').forEach(e=>{const l=e.dataset.chips.split(',');if(e.id==='eco')e.insertAdjacentHTML('beforeend',l.map((x,i)=>{const a=i/l.length*6.283-1.57;return `<span class="chip" style="left:${50+44*Math.cos(a)}%;top:${50+44*Math.sin(a)}%">${x}</span>`}).join(''));else e.innerHTML=l.map(x=>`<span class="chip">${x}</span>`).join('')});
+$('[data-k]').forEach(e=>e.textContent=pitchData[e.dataset.k]);
+
+const S=$('.slide'),n=S.length,menu=$('#menu')[0];let i=0;
+const pad=x=>String(x).padStart(2,'0');
+function go(k){i=Math.max(0,Math.min(n-1,k));S.forEach((s,j)=>s.classList.toggle('active',j===i));
+ $('#ctr')[0].textContent=`${pad(i+1)} / ${pad(n)}`;$('#pb').style.width=((i+1)/n*100)+'%';
+ document.body.classList.toggle('on-dark',S[i].classList.contains('dark'));menu.hidden=true}
+const fs=()=>document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen();
+menu.innerHTML=S.map((s,j)=>`<button data-j="${j}">${pad(j+1)} ${s.dataset.t}</button>`).join('');
+menu.onclick=e=>{const j=e.target.dataset.j;if(j!==undefined)go(+j)};
+$('#prev')[0].onclick=()=>go(i-1);$('#next')[0].onclick=()=>go(i+1);$('#fs')[0].onclick=fs;$('#ov')[0].onclick=()=>menu.hidden=!menu.hidden;
+addEventListener('keydown',e=>{const k=e.key;
+ if(k==='ArrowRight'||k===' '){e.preventDefault();go(i+1)}else if(k==='ArrowLeft')go(i-1);
+ else if(k==='Home')go(0);else if(k==='End')go(n-1);else if(k==='f'||k==='F')fs();else if(k==='Escape')menu.hidden=true});
+let x0;addEventListener('touchstart',e=>x0=e.touches[0].clientX);
+addEventListener('touchend',e=>{if(innerWidth>850&&x0!=null){const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>60)go(i+(d<0?1:-1))}});
+go(0);
