@@ -2,7 +2,7 @@
 const pitchData={
  farmers:"[XX+]",users:"[XX+]",products:"[XX+]",orders:"[XX+]",value:"GH₵ [XX]",prospects:"[XX+]",riders:"[XX+]",partners:"[XX+]",
  funding:"GH₵20,000",
- t_farmers:"[XX]+",t_customers:"[XX]+",t_business:"[XX]+",t_products:"[XX]+",t_waste:"[XX]+",t_collectors:"[XX]+",t_upcyclers:"[XX]+",t_tx:"[XX]+",
+ t_farmers:"[100]+",t_customers:"[500]+",t_business:"[15]+",t_products:"[300]+",t_waste:"[150]+",t_collectors:"[20]+",t_upcyclers:"[15]+",t_tx:"[1200]+",
  email:"skylynqdigital@gmail.com",phone:"+233 59 686 5714",social:"Facebook · Instagram · WhatsApp"
 };
 /* ===== END EDITABLE CONTENT ===== */
