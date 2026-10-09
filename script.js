@@ -1,7 +1,7 @@
 /* ===== EDITABLE CONTENT: update these figures with verified data ===== */
 const pitchData={
  farmers:"[XX+]",users:"[XX+]",products:"[XX+]",orders:"[XX+]",value:"GH₵ [XX]",prospects:"[XX+]",riders:"[XX+]",partners:"[XX+]",
- funding:"GH₵ [INSERT AMOUNT]",
+ funding:"GH₵20,000",
  t_farmers:"[XX]+",t_customers:"[XX]+",t_business:"[XX]+",t_products:"[XX]+",t_waste:"[XX]+",t_collectors:"[XX]+",t_upcyclers:"[XX]+",t_tx:"[XX]+",
  email:"skylynqdigital@gmail.com",phone:"+233 59 686 5714",social:"Facebook · Instagram · WhatsApp"
 };
